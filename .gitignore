@@ -1,0 +1,67 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+*.egg-info/
+*.egg
+dist/
+build/
+wheels/
+sdist/
+.eggs/
+
+# Virtual environments
+.env
+.venv
+venv/
+env/
+ENV/
+
+# ── Data files ────────────────────────────────────────────────────────────────
+# Raw market data downloads – do NOT track large CSVs in git.
+# Processed results in results/ ARE tracked (see un-ignore rule below).
+data/*.csv
+data/**/*.csv
+
+# Other large raw-data formats
+*.parquet
+*.h5
+*.hdf5
+*.feather
+
+# ── Test / coverage artefacts ─────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ── OS artefacts ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Large files (general) ─────────────────────────────────────────────────────
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# ── Keep results/ tracked ─────────────────────────────────────────────────────
+!results/
+!results/**
